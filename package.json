@@ -1,0 +1,33 @@
+{
+  "name": "thunderstore",
+  "version": "1.0.0",
+  "homepage": "https://github.com/1N50MN14/thunderstore",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/1N50MN14/thunderstore.git"
+  },
+  "devDependencies": {
+    "tap": "~0.4.0"
+  },
+  "author": "ins0mnia <ayman.mackouly@gmail.com> (http://github.com/1N50MN14)",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "description": "Access localStorage from the server and vice versa!",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "inherits": "~1.0.0",
+    "duplex-emitter": "~0.1.8"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "keywords": [
+    "locateStorage",
+    "remote",
+    "session",
+    "cookie"
+  ]
+}
