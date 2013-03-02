@@ -23,8 +23,7 @@ function ThunderStore(stream) {
 ThunderStore.prototype.set = function() {	
 	var self = this, key, value, property = null, args, l;
 
-	args = [].slice.call(arguments);
-	console.log('set!', args)
+	args = [].slice.call(arguments);	
 	l = args.length;
 
 	if (l == 2) {
