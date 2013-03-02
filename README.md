@@ -11,10 +11,8 @@ server.js (with shoe)
 ```javascript
 var sock = shoe(function(stream) {
  var thunderstore = new ThunderStore(stream); 
-
  	 thunderstore.set('boop', 'beep');
 	 thunderstore.session = {user: 'cat!'};
-
 	 thunderstore.on('set', function(args){
 		console.log('set from remote!', args);
 	}); 
@@ -27,13 +25,11 @@ client.js (with shoe)
 ```javascript
 var stream = shoe('/sock');
 var thunderstore = new ThunderStore(stream);
-
-	thunderstore.set('beep', 'boop')
-	thunderstore.session = {user: 'dog'};
-
-	thunderstore.on('set', function(args){
-		console.log('set from remote!', args)
-	})
+thunderstore.set('beep', 'boop')
+thunderstore.session = {user: 'dog'};
+thunderstore.on('set', function(args){
+	console.log('set from remote!', args)
+})
 ```
 
 ## METHODS
