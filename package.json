@@ -1,6 +1,6 @@
 {
   "name": "thunderstore",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/1N50MN14/thunderstore",
   "repository": {
     "type": "git",
@@ -15,6 +15,7 @@
   "description": "Access localStorage from the server and vice versa!",
   "main": "index.js",
   "directories": {
+    "example": "example",
     "test": "test"
   },
   "dependencies": {
@@ -29,5 +30,6 @@
     "remote",
     "session",
     "cookie"
-  ]
+  ],
+  "gitHead": "1e9ee993fab98997a2143fde0c83daad606bfad4"
 }
