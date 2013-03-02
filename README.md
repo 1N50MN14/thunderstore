@@ -6,17 +6,9 @@ Thunderstore also exposes a convenient session property (shorthand for .get('ses
 
 ## Example
 
-server.js
+server.js (with shoe)
 
 ```javascript
-var http = require('http'),
-    ecstatic = require('ecstatic'),
-    shoe = require('shoe'),
-    ThunderStore = require('../index');
-
-var server = http.createServer(ecstatic({ root: __dirname + '/public' }));
-server.listen(5555);
-
 var sock = shoe(function(stream) {
  var thunderstore = new ThunderStore(stream); 
 
@@ -31,19 +23,13 @@ var sock = shoe(function(stream) {
 sock.install(server, '/sock');
 ```
 
-client.js
+client.js (with shoe)
 ```javascript
-var shoe = require('shoe'),
-    ThunderStore = require('thunderstore');
-
 var stream = shoe('/sock');
 var thunderstore = new ThunderStore(stream);
 
 	thunderstore.set('beep', 'boop')
 	thunderstore.session = {user: 'dog'};
-
-	console.log(thunderstore.session);
-	console.log(thunderstore.get('beep'))
 
 	thunderstore.on('set', function(args){
 		console.log('set from remote!', args)
