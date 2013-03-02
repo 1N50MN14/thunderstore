@@ -1,6 +1,6 @@
 # thunderstore
 
-Keeps your localStorage in sync with the server and allows for access and manupilation of localStorage direct from the server! 
+Keeps your localStorage in sync with the server and allows for access and manupilation of localStorage directly from the server! 
 
 Thunderstore also exposes a convenient session property (shorthand for .get('session') and .set('session')) so you could store session data in localStorage because [cookies are bad for you](http://sitr.us/2011/08/26/cookies-are-bad-for-you.html)!
 
